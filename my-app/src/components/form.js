@@ -1,4 +1,4 @@
-function form(){
+function Form(){
     return(
         <div className="placeHolder">
         <form  className="placeHolder ">
@@ -18,14 +18,16 @@ function form(){
           />
           <br />
           <input
-            type="text"
+            type="number out of 10"
             name="rating"
+            placeholder= 'rating'
             className="placeHolder class "
           />
           <br />
           <input
             type="text"
             name="released"
+            placeholder= 'released'
             className="placeHolder Class"
           />
         </form>
@@ -33,3 +35,4 @@ function form(){
     );
     
 }
+export default Form 
