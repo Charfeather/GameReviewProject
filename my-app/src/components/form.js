@@ -1,15 +1,20 @@
-import { useState } from "react";
+import React, { useState } from "react";
+
 
 const intialState = {
-  rating: 0,
+  rating:'0',
   image:'',
   game: '',
   released: ''
 }
 
+
+
 function Form(){
-  const {formData, setFormData} = useState(intialState)
+
+  const [formData, setFormData] = useState(intialState)
   const {rating, image, game, released} = formData
+  const [gameType,setGameType] = useState([])
 
   function handleChange(event){
     setFormData((currentForm) =>{
@@ -19,16 +24,21 @@ function Form(){
       }
     })
   }
-  function handleSubmit(event){
-    event.preventDefault()
-    fetch('http://localhost:3000',{
-      method: 
-    })
-
+  
+  function handleSubmit(e){
+    e.preventDefault()
+  }
+  function handleGameType(){
+    setGameType()
   }
     return(
         <div className="placeHolder">
-        <form  onSubmit={handleSubmit} className="placeHolder ">
+        <form onSubmit={handleSubmit} className="placeHolder ">
+          <select onClick={handleGameType}>
+            <option value='shooting' />
+            <option value= 'mmorpg' />
+            <option value= 'open-world'/>
+          </select>
           <h3> Add Your favorite Game </h3>
           <input
             type="text"
