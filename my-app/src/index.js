@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import Shooter from './Shooter';
 import Mmorpg from './Mmorpg'
+import Openworld from './Openworld'
 
 const routes=[
   {
@@ -18,8 +19,12 @@ const routes=[
   path:"/mmo-reviews",
   element:<Mmorpg />
 },{
+  path:"/open-world-reviews/",
+  element:<Openworld/>
+},
+{
   path:"/form",
-  element://put your form element here
+  element:<App/>
 }
 ]
 const router=createBrowserRouter(routes)
