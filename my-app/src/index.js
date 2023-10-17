@@ -7,6 +7,7 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom"
 import Shooter from './Shooter';
 import Mmorpg from './Mmorpg'
 import Form from './components/Form';
+import OpenWorldComponent from './Openworld';
 
 const routes=[
   {
@@ -20,7 +21,7 @@ const routes=[
   element:<Mmorpg />
 },{
   path:"/open-world-reviews/",
-  element:<Openworld/>
+  element:<OpenWorldComponent/>
 },
 {
   path:"/form",

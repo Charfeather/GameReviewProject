@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import GameReviewRender from "./GameReviewRender"
+import { NavLink } from "react-router-dom"
 
 function OpenWorldComponent(){
     const [games,setgames]=useState([])
@@ -22,7 +23,14 @@ function OpenWorldComponent(){
         {gameRender}
      </ul>
      <div className="button_div">
-         <button className="button">ADD A NEW GAME</button>
+        <button className="button">
+            <NavLink 
+            to='/Form'>ADD A NEW GAME</NavLink>
+        </button>
+        <button className="button">
+            <NavLink
+            to='/'>HOME</NavLink>
+        </button>
      </div>
     </div>
     )

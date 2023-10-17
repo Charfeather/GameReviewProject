@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 
 const intialState = {
@@ -47,6 +48,7 @@ function Form(){
     .catch(console.log);
   }
   function handleGameType(e){
+    console.log(e.target.value)
 
     setGameType(e.target.value)
   }
@@ -56,6 +58,7 @@ function Form(){
          
           <h3 className="form-title"> Add Your favorite Game </h3>
           <select onChange={handleGameType} className="select-text">
+            <option value="" disabled selected hidden>Pick A Category</option>
             <option value= 'shooter'> shooter</option>
             <option value= 'MMORPG'> mmorpg</option>
             <option value= 'openWorld'>open-world</option>
@@ -101,6 +104,22 @@ function Form(){
           />
            <button type="submit" className="submit"> Add Game </button>
         </form>
+        <button className="button">
+            <NavLink
+            to='/'>HOME</NavLink>
+        </button>
+        <button className="button">
+            <NavLink
+            to="/open-world-reviews/">Open-World Games</NavLink>
+        </button>
+        <button className="button">
+            <NavLink
+            to='/mmo-reviews'>MMO Games</NavLink>
+        </button>
+        <button className="button">
+            <NavLink
+            to='/shooter-reviews'>Shooting Games</NavLink>
+        </button>
       </div>
     );
     

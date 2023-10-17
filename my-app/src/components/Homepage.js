@@ -25,7 +25,13 @@ function Homepage(){
                 to="/mmo-reviews">MMORPG
                 </NavLink>
             </button>
-            
+            <button className="openworld-route">
+                <NavLink 
+                to= "/open-world-reviews/">
+                    Openworld
+                </NavLink>
+                
+            </button>
         </div>
     )
 }
