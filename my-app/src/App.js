@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Form from './components/Form'; 
+import Homepage from './components/Homepage';
 
 function App() {
   const [gameData, setGameData] = useState([])
@@ -9,6 +10,7 @@ function App() {
   return (
     <div>
       <Form />
+      <Homepage/>
     </div>
 
   );

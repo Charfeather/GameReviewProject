@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 const intialState = {
-  rating:'0',
+  rating: 0,
   image:'',
   game: '',
   released: ''
@@ -14,7 +14,7 @@ function Form(){
 
   const [formData, setFormData] = useState(intialState)
   const {rating, image, game, released} = formData
-  const [gameType,setGameType] = useState([])
+  const [gameType,setGameType] = useState('')
 
   function handleChange(event){
     setFormData((currentForm) =>{
@@ -27,19 +27,39 @@ function Form(){
   
   function handleSubmit(e){
     e.preventDefault()
+    
+    fetch(`http://localhost:3001/${gameType}`,{
+      method: 'POST',
+      headers:{ "Content-Type": "application/json",},
+      body:JSON.stringify(formData),
+    })
+    .then((resp) => {
+      if (resp.ok) {
+        return resp.json();
+      } else {
+        throw Error("didn't work");
+      }
+    })
+    .then((game) =>  {
+      console.log(game)
+      
+    })
+    .catch(console.log);
   }
-  function handleGameType(){
-    setGameType()
+  function handleGameType(e){
+
+    setGameType(e.target.value)
   }
     return(
-        <div className="placeHolder">
-        <form onSubmit={handleSubmit} className="placeHolder ">
-          <select onClick={handleGameType}>
-            <option value='shooting' />
-            <option value= 'mmorpg' />
-            <option value= 'open-world'/>
+        <div className="container">
+        <form  onSubmit={handleSubmit}>
+         
+          <h3 className="form-title"> Add Your favorite Game </h3>
+          <select onChange={handleGameType} className="select-text">
+            <option value= 'shooter'> shooter</option>
+            <option value= 'MMORPG'> mmorpg</option>
+            <option value= 'openWorld'>open-world</option>
           </select>
-          <h3> Add Your favorite Game </h3>
           <input
             type="text"
             name="game"
@@ -55,16 +75,18 @@ function Form(){
             type="text"
             name="image"
             placeholder="Enter a image URL..."
-            className="placeHolder class"
+            className="input-text"
             value={image}
             onChange={handleChange}
           />
           <br />
           <input
-            type="number out of 10"
+            type='number'
+            max={10}
+            min={0}
             name="rating"
             placeholder= 'rating'
-            className="placeHolder class "
+            className="input-text "
             value={rating}
             onChange={handleChange}
           />
@@ -73,10 +95,11 @@ function Form(){
             type="text"
             name="released"
             placeholder= 'released'
-            className="placeHolder Class"
+            className="input-text"
             value={released}
             onChange={handleChange}
           />
+           <button type="submit" className="submit"> Add Game </button>
         </form>
       </div>
     );
