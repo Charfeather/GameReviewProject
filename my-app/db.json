@@ -1,92 +1,71 @@
 {
-  "shooter": [
-    {
-      "id": 1,
-      "game": "Halo",
-      "released": 2001,
-      "rating": "8/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Halo_-_Combat_Evolved_%28XBox_version_-_box_art%29.jpg"
-    },
-    {
-      "id": 2,
-      "game": "Call of Duty Modern Warfare 2",
-      "released": 2009,
-      "rating": "9/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/52/Call_of_Duty_Modern_Warfare_2_%282009%29_cover.png"
-    },
-    {
-      "id": 3,
-      "game": "Gears of War",
-      "released": 2006,
-      "rating": "8/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/82/Gears_of_war_cover_art.jpg"
-    },
-    {
-      "rating": "0",
-      "image": "",
-      "game": "",
-      "released": "",
-      "id": 4
-    }
-  ],
-  "openWorld": [
-    {
-      "id": 4,
-      "game": "Skyrim",
-      "released": 2011,
-      "rating": "9/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png"
-    },
-    {
-      "id": 5,
-      "game": "Dark Souls",
-      "released": 2011,
-      "rating": "9/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/8d/Dark_Souls_Cover_Art.jpg"
-    },
-    {
-      "id": 6,
-      "game": "Dark Souls",
-      "released": 2013,
-      "rating": "9/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
-    },
-    {
-      "rating": "0",
-      "image": "",
-      "game": "",
-      "released": "",
-      "id": 7
-    }
-  ],
-  "MMORPG": [
-    {
-      "id": 7,
-      "game": "World of WarCraft",
-      "released": 2004,
-      "rating": "8/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png"
-    },
-    {
-      "id": 8,
-      "game": "Phantasy Star Online 2",
-      "released": 2021,
-      "rating": "7/10",
-      "image": "https://static.wikia.nocookie.net/phantasystar/images/8/81/Pso2_ngs_key_visual.jpg/revision/latest?cb=20201221173722"
-    },
-    {
-      "id": 9,
-      "game": "Guild Wars 2",
-      "released": 2012,
-      "rating": "9/10",
-      "image": "https://upload.wikimedia.org/wikipedia/en/9/96/Gw2-boxfront.png"
-    },
-    {
-      "rating": "0",
-      "image": "",
-      "game": "",
-      "released": "",
-      "id": 10
-    }
-  ]
+    "shooter":[
+        {
+            "id":1,
+            "game": "Halo",
+            "released": 2001,
+            "rating": "8/10",
+            "image": "https://upload.wikimedia.org/wikipedia/en/8/80/Halo_-_Combat_Evolved_%28XBox_version_-_box_art%29.jpg"
+        },
+        {
+            "id":2,
+            "game": "Call of Duty Modern Warfare 2",
+            "released": 2009,
+            "rating": "9/10",
+            "image": "https://upload.wikimedia.org/wikipedia/en/5/52/Call_of_Duty_Modern_Warfare_2_%282009%29_cover.png"
+        },
+        {
+            "id":3,
+            "game": "Gears of War",
+            "released": 2006,
+            "rating": "8/10",
+            "image": "https://upload.wikimedia.org/wikipedia/en/8/82/Gears_of_war_cover_art.jpg"
+        }
+    ],
+    "openWorld":[
+        {
+            "id":4,
+            "game": "Skyrim",
+            "released": 2011,
+            "rating": "9/10",
+            "image":"https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png"
+        },
+        {
+            "id":5,
+            "game": "Dark Souls",
+            "released": 2011,
+            "rating": "9/10",
+            "image":"https://upload.wikimedia.org/wikipedia/en/8/8d/Dark_Souls_Cover_Art.jpg"
+        },
+        {
+            "id":6,
+            "game": "Grand Theft Auto",
+            "released": 2013,
+            "rating": "9/10",
+            "image":"https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png"
+        }
+    ],
+    "MMORPG":[
+        {
+            "id":7,
+            "game": "World of WarCraft",
+            "released": 2004,
+            "rating": "8/10",
+            "image":"https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png"
+        },
+        {
+            "id":8,
+            "game": "Phantasy Star Online 2",
+            "released": 2021,
+            "rating": "7/10",
+            "image":"https://static.wikia.nocookie.net/phantasystar/images/8/81/Pso2_ngs_key_visual.jpg/revision/latest?cb=20201221173722"
+        },
+        {
+            "id":9,
+            "game": "Guild Wars 2",
+            "released": 2012,
+            "rating": "9/10",
+            "image":"https://upload.wikimedia.org/wikipedia/en/9/96/Gw2-boxfront.png"
+        }
+    ]
 }

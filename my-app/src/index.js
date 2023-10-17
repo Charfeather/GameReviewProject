@@ -19,6 +19,10 @@ const routes=[
   path:"/mmo-reviews",
   element:<Mmorpg />
 },{
+  path:"/open-world-reviews/",
+  element:<Openworld/>
+},
+{
   path:"/form",
   element: <Form />
 }
