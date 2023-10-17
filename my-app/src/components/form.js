@@ -82,8 +82,8 @@ function Form(){
           <br />
           <input
             type='number'
-            max={10}
-            min={0}
+            max='10'
+            min='0'
             name="rating"
             placeholder= 'rating'
             className="input-text "

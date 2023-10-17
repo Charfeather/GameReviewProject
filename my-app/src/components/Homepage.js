@@ -19,12 +19,17 @@ function handleOpenWorld(){
 }
 
     return(
-        <div>
-            <h1> title </h1>
-            <button onClick={handleSubmitRoute}>submit</button>
-            <button onClick={handleShooter}>shooter</button>
-            <button onClick={handleMmrpg}>MMORPG</button>
-            <button onClick={handleOpenWorld}>openWorld</button>
+        <div className="homepage-container">
+
+            <h1 className="homepage-title"> title </h1>
+
+            <button onClick={handleSubmitRoute} className="submit-route">submit</button>
+
+            <button onClick={handleShooter} className="shooter-route">shooter</button>
+
+            <button onClick={handleMmrpg} className="mmrpg-route">MMORPG</button>
+
+            <button onClick={handleOpenWorld} className="openworld-route">open-world</button>
         </div>
     )
 }
