@@ -3,12 +3,30 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {createBrowserRouter,RouterProvider} from "react-router-dom"
+import Shooter from './Shooter';
+import Mmorpg from './Mmorpg'
+
+const routes=[
+  {
+  path:"/",
+  element:<App />
+},{
+  path:"/shooter-reviews",
+  element:<Shooter />
+},{
+  path:"/mmo-reviews",
+  element:<Mmorpg />
+},{
+  path:"/form",
+  element://put your form element here
+}
+]
+const router=createBrowserRouter(routes)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ <RouterProvider router={router}/>
 );
 
 // If you want to start measuring performance in your app, pass a function
