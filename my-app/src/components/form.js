@@ -53,7 +53,7 @@ function Form(){
     setGameType(e.target.value)
   }
     return(
-        <div className="container">
+        <div className="form-container">
         <form  onSubmit={handleSubmit}>
          
           <h3 className="form-title"> Add Your favorite Game </h3>
@@ -104,20 +104,24 @@ function Form(){
           />
            <button type="submit" className="submit"> Add Game </button>
         </form>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="inner-text"
             to='/'>HOME</NavLink>
         </button>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="inner-text"
             to="/open-world-reviews/">Open-World Games</NavLink>
         </button>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="inner-text"
             to='/mmo-reviews'>MMO Games</NavLink>
         </button>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="inner-text"
             to='/shooter-reviews'>Shooting Games</NavLink>
         </button>
       </div>
