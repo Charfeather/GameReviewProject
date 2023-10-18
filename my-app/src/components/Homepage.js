@@ -14,14 +14,14 @@ function Homepage(){
             <button className="submit-route">
                 < NavLink
                 className="inner-text"
-                to="/Form"> submit 
+                to="/Form"> New Game
                 </NavLink>
              </button>
 
             <button  className="shooter-route">
                 <NavLink 
                 className="inner-text"
-                to='/shooter-reviews'>shooter
+                to='/shooter-reviews'>Shooting
                 </NavLink>
             </button>
 
