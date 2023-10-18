@@ -3,10 +3,7 @@ import Form from './components/Form';
 import Homepage from './components/Homepage';
 
 function App() {
-  const [gameData, setGameData] = useState([])
-  useEffect(() => {
-    
-  }, [])
+  
   return (
     <div>
       <Homepage/>
