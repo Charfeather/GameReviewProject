@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-function gameReviewRender({image,name,release,rating}){
+function GameReviewRender({image,name,release,rating}){
+    const[nameOrRating,setNameOrRating]=useState(true)
+    const handleClick=()=>{
+        console.log('I was clicked')
+        setNameOrRating(!nameOrRating)
+    }
     return(
         <li className="cards__item">
             <div className="card">
@@ -8,13 +13,15 @@ function gameReviewRender({image,name,release,rating}){
                   src={image}
                   alt={name}
                   className="card__image"
+                  onClick={handleClick}
                   />
                 <div className="game_content">
-                    <div className="game_name">{name}</div>
-                    <div className="rating"><h1>{rating}</h1></div>
+                    {
+                        nameOrRating ? <div className="game_name">{name}</div> : <div className="rating"><h1>{rating}</h1></div>
+                    }
                 </div>
             </div>
         </li>
     )
 }
-export default gameReviewRender
+export default GameReviewRender

@@ -19,7 +19,7 @@ function OpenWorldComponent(){
     })
     return(
     <div className="centerer">    
-     <ul className="cards">Hello
+     <ul className="cards">
         {gameRender}
      </ul>
      <div className="button_div">

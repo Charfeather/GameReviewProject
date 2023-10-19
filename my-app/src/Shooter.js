@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import GameReviewRender from "./GameReviewRender"
 import { NavLink } from "react-router-dom"
+
 function ShooterComponent(){
     const [games,setgames]=useState([])
     useEffect(()=>{
@@ -17,20 +18,21 @@ function ShooterComponent(){
         return(<GameReviewRender key={game.game} image={game.image} name={game.game} release={game.released} rating={game.rating} />)
     })
     return(
-    <div className="centerer">    
-     <ul className="cards">
-        {gameRender}
-     </ul>
-     <div className="button_div">
-        <button className="button">
-            <NavLink
-            to='/Form'>ADD A NEW GAME</NavLink>
-        </button>
-        <button className="button">
-            <NavLink
-            to='/'>HOME</NavLink>
-        </button>
-     </div>
+    <div className='centerer'>
+        <div className="header"></div>  
+        <div className="cards">
+           {gameRender}
+        </div>
+        <div className="button_div">
+           <button className="button">
+               <NavLink 
+               to='/Form'>ADD A NEW GAME</NavLink>
+           </button>
+           <button className="button">
+               <NavLink
+               to='/'>HOME</NavLink>
+           </button>
+        </div>
     </div>
     )
 }

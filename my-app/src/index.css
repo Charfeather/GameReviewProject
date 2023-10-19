@@ -128,21 +128,27 @@ code {
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: center;
 }
 
 .cards__item {
   display: flex;
   padding: 1rem;
   width: 25%;
+  justify-content: center;
 }
 
 .card {
-  background-color: white;
+  background-color: rgb(250, 250, 250);
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  justify-content: center;
 }
 
 .card__content {
@@ -222,7 +228,7 @@ body{
 }
 .button{
   background-color: #4CAF50; /* Green */
-  border: none;
+  border: 4px solid green;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -232,4 +238,8 @@ body{
 }
 .centerer{
   text-align: center;
+}
+.game_name{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: x-large;
 }
