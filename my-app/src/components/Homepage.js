@@ -6,29 +6,35 @@ function Homepage(){
     return(
         <div className="homepage-container">
 
-            <h1 className="homepage-title"> title </h1>
+            <div className="title-div">
+                <h1 className="homepage-title"> GAMER'S  WORLD </h1>
+            </div>
+            
 
             <button className="submit-route">
                 < NavLink
-                to="/Form" 
-                > submit </NavLink>
+                className="inner-text"
+                to="/Form"> New Game
+                </NavLink>
              </button>
 
             <button  className="shooter-route">
                 <NavLink 
-                to='/shooter-reviews'>shooter
+                className="inner-text"
+                to='/shooter-reviews'>Shooting
                 </NavLink>
             </button>
 
             <button className="mmrpg-route">
                 <NavLink 
+                className="inner-text"
                 to="/mmo-reviews">MMORPG
                 </NavLink>
             </button>
             <button className="openworld-route">
                 <NavLink 
-                to= "/open-world-reviews/">
-                    Openworld
+                className="inner-text"
+                to= "/open-world-reviews/"> Openworld
                 </NavLink>
                 
             </button>

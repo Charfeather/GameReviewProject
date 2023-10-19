@@ -19,7 +19,7 @@ function ShooterComponent(){
     })
     return(
     <div className='centerer'>
-        <div className="header"></div>  
+        <div className="shooter-page"><h1>Gamers World</h1><p>Shooters</p></div>  
         <div className="cards">
            {gameRender}
         </div>

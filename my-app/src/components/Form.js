@@ -14,7 +14,7 @@ const intialState = {
 function Form(){
 
   const [formData, setFormData] = useState(intialState)
-  const {rating, image, game, released} = formData
+  const {rating, image, game, released,} = formData
   const [gameType,setGameType] = useState('')
 
   function handleChange(event){
@@ -42,7 +42,7 @@ function Form(){
       }
     })
     .then((game) =>  {
-      console.log(game)
+      setFormData(intialState)
       
     })
     .catch(console.log);
@@ -53,10 +53,12 @@ function Form(){
     setGameType(e.target.value)
   }
     return(
-        <div className="container">
+        <div className="form-container">
         <form  onSubmit={handleSubmit}>
-         
-          <h3 className="form-title"> Add Your favorite Game </h3>
+          <div className="formtitle-cont">
+            <h3 className="form-title"> Add Your favorite Game </h3>
+          </div>
+          
           <select onChange={handleGameType} className="select-text">
             <option value="" disabled selected hidden>Pick A Category</option>
             <option value= 'shooter'> shooter</option>
@@ -104,20 +106,24 @@ function Form(){
           />
            <button type="submit" className="submit"> Add Game </button>
         </form>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="forminner-text"
             to='/'>HOME</NavLink>
         </button>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="forminner-text"
             to="/open-world-reviews/">Open-World Games</NavLink>
         </button>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="forminner-text"
             to='/mmo-reviews'>MMO Games</NavLink>
         </button>
-        <button className="button">
+        <button className="form-button">
             <NavLink
+            className="forminner-text"
             to='/shooter-reviews'>Shooting Games</NavLink>
         </button>
       </div>

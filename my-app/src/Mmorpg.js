@@ -17,20 +17,21 @@ function MmoComponent(){
         return(<GameReviewRender key={game.game} image={game.image} name={game.game} release={game.released} rating={game.rating} />)
     })
     return(
-    <div className="centerer">    
-     <ul className="cards">
-        {gameRender}
-     </ul>
-     <div className="button_div">
-        <button className="button">
-            <NavLink
-            to='/Form'>ADD A NEW GAME</NavLink>
-        </button>
-        <button className="button">
-            <NavLink
-            to='/'>HOME</NavLink>
-        </button>
-     </div>
+    <div className='centerer'>
+        <div className="mmo-page"><h1>Gamers World</h1><p>MMO Games</p></div>  
+        <div className="cards">
+           {gameRender}
+        </div>
+        <div className="button_div">
+           <button className="button">
+               <NavLink 
+               to='/Form'>ADD A NEW GAME</NavLink>
+           </button>
+           <button className="button">
+               <NavLink
+               to='/'>HOME</NavLink>
+           </button>
+        </div>
     </div>
     )
 }
